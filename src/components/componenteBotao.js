@@ -5,7 +5,7 @@ class Componente extends Component {
     constructor() {
         super()
         this.state = {
-            texto: 'asd'
+            texto: 'sdads'
         }
         this.count = 0
         this.sheesh =  false

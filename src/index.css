@@ -34,7 +34,7 @@ azul {
   width: 100%;
   min-height: 100vh;
 
-  background-image: linear-gradient(to right, #005bbb 50%, #ffd500 50%);
+  background-image: linear-gradient(to bottom, #005bbb 50%, #ffd500 50%);
 }
 .displayUKR {
   display: flex;
@@ -47,12 +47,13 @@ azul {
 
 .container1 {
   width: 60%;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 30%;
-  background: #232425;
+  height: 60%;
+  background: rgba(35, 36, 37, 0.77);
+  backdrop-filter: blur(35px);
+  border-radius: 40px;
   color: #fff;
   text-align: center;
   display: inline-block;
@@ -68,4 +69,13 @@ azul {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 22px;
+}
+
+.carrossel {
+  width:45%;
+  position: absolute;
+  top: 69%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
