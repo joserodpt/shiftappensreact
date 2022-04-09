@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import React from "react";
-import Rectangle from 'react-rectangle';
 import Dados from "./components/dados";
 
 function App(){
