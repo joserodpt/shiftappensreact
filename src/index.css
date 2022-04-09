@@ -15,7 +15,7 @@ code {
 amarelo {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
-  color: #F0F600;
+  color: #ffd500;
 }
 
 azul {
@@ -26,4 +26,46 @@ azul {
 
 #retangulo {
  border-radius: 15px;
+}
+
+.bandeira {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: linear-gradient(to right, #005bbb 50%, #ffd500 50%);
+}
+.displayUKR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.container1 {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 30%;
+  background: #232425;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+
+  box-sizing: border-box;
+}
+
+.center h3 {
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
 }

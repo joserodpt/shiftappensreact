@@ -1,28 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
-import Componente from "./components/componente";
 import React from "react";
+import Rectangle from 'react-rectangle';
+import Dados from "./components/dados";
 
-function App() {
-  return (
-      <div className="App">
-        <header className="App-header">
-            <p>
-                <code>Equipa AlTF4 | ShiftAPPens 22'</code>
-            </p>
-            <body>
-            <amarelo><h1>Ukraine Numbers</h1></amarelo>
+function App(){
 
 
 
-            <azul><Componente dadoMorte = 'teste'/></azul>
-            <Componente dadoMorte = 'uuuu'/>
+    return (
 
-            </body>
-            <img src={logo} className="rodaroda" alt="logo" />
-        </header>
-      </div>
-  );
+        <div className="App center">
+
+                <div className="bandeira">
+                    <h3>
+                    <p>
+                        <code>Equipa AlTF4 | ShiftAPPens 22'</code>
+                    </p>
+                    <h3 className="displayUKR">Ukraine Numbers</h3>
+
+                    <Dados></Dados>
+
+                    <azul><p1>teste</p1></azul>
+                    <img src={logo} className="rodaroda" alt="logo" />
+                </h3>
+
+                </div>
+
+
+
+        </div>
+    );
 }
 
 export default App;
