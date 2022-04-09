@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Componente from "./components/componente";
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <header className="App-header">
+            <p>
+                <code>Equipa AlTF4 | ShiftAPPens 22'</code>
+            </p>
+            <body>
+            <amarelo><h1>Ukraine Numbers</h1></amarelo>
+
+
+
+            <azul><Componente dadoMorte = 'teste'/></azul>
+            <Componente dadoMorte = 'uuuu'/>
+
+            </body>
+            <img src={logo} className="rodaroda" alt="logo" />
+        </header>
+      </div>
   );
 }
 
