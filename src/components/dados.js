@@ -84,7 +84,7 @@ class Dados extends React.Component {
                 Ataques a hospitais: {this.state.healthcareattacks}<br /><br />
             </div>
                 <br/>
-            <Carousel className='carrossel' transitionTime={650} statusFormatter={(current) => ''}>
+            <Carousel className='carrossel' transitionTime={650} autoPlay={true} infiniteLoop={true} interval={5000} statusFormatter={(current) => ''}>
                 <div>
                     {this.state.date1}<br />
                     Feridos: {this.state.injured1} | Mortos: {this.state.killed1}<br /><br />
@@ -92,6 +92,7 @@ class Dados extends React.Component {
                     Feridos: {this.state.injured2} | Mortos: {this.state.killed2}<br /><br />
                     {this.state.date3}<br />
                     Feridos: {this.state.injured3} | Mortos: {this.state.killed3}
+
                 </div>
 
                 <div>
