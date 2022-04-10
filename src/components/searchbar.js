@@ -69,7 +69,7 @@ class Searchbar extends React.Component {
         return (
             <div  className='container2'>
 
-                <Autocomplete
+                <Autocomplete className='autocomplete'
                               options={this.state.options}
                               style={{ width: 300 }}
                               onChange={this.doCenas}

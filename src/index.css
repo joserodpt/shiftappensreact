@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.MuiInput-underline.Mui-disabled:before {
+  border-bottom: 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -102,4 +106,9 @@ azul {
   left: 50%;
 
   transform: translate(-50%, -50%);
+}
+
+.autocomplete {
+  padding-top: 0.5em;
+  padding-left: 0.5em;
 }
