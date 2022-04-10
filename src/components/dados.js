@@ -34,7 +34,6 @@ class Dados extends React.Component {
             .then(response => response.json())
             .then((data) => {
                 let len = data.timeseries_casualties_data.length
-                console.log(data.timeseries_casualties_data[len-1]);
 
                 let splitData1 = (data.timeseries_casualties_data[len-1]["#date"]).toString().split('-')
                 let data1 = splitData1[2] + '/' + splitData1[1]
