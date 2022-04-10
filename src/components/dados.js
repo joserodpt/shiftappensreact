@@ -1,6 +1,7 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import Flag from "./flag";
 
 class Dados extends React.Component {
 
@@ -75,36 +76,42 @@ class Dados extends React.Component {
             });
     }
     render() {
-
         return (
-            <div>
-            <div>
-                <br/>🇺🇦 Até agora na Ucrânia 🇺🇦<br/><br />
-                Ataques a escolas: {this.state.educationattacks}<br />
-                Ataques a hospitais: {this.state.healthcareattacks}<br /><br />
-            </div>
-                <br/>
-            <Carousel className='carrossel' transitionTime={650} autoPlay={true} infiniteLoop={true} interval={5000} statusFormatter={(current) => ''}>
-                <div>
-                    {this.state.date1}<br />
-                    Feridos: {this.state.injured1} | Mortos: {this.state.killed1}<br /><br />
-                    {this.state.date2}<br />
-                    Feridos: {this.state.injured2} | Mortos: {this.state.killed2}<br /><br />
-                    {this.state.date3}<br />
-                    Feridos: {this.state.injured3} | Mortos: {this.state.killed3}
 
-                </div>
+            <div className='container1'>
 
-                <div>
-                    {this.state.refugee1date}
-                    <br /> Refugiados: {this.state.refugee1} <br /><br />
-                    {this.state.refugee2date}
-                    <br /> Refugiados: {this.state.refugee2} <br /><br />
-                    {this.state.refugee3date}
-                    <br /> Refugiados: {this.state.refugee3} <br /><br />
-                </div>
-            </Carousel>
+                <br/><br/>
+                <Carousel className='carousel' transitionTime={650} autoPlay={true} infiniteLoop={true} showIndicators={false} interval={5000} statusFormatter={(current) => ''}>
+                    <div>
+                        <br/><br/><Flag></Flag> Até agora na Ucrânia <Flag></Flag><br/><br />
+                        Ataques a escolas: {this.state.educationattacks}<br />
+                        Ataques a hospitais: {this.state.healthcareattacks}<br /><br />
+                    </div>
+
+                    <div>
+
+                        {this.state.date1}<br />
+                        Feridos: {this.state.injured1} | Mortos: {this.state.killed1}<br /><br />
+                        {this.state.date2}<br />
+                        Feridos: {this.state.injured2} | Mortos: {this.state.killed2}<br /><br />
+                        {this.state.date3}<br />
+                        Feridos: {this.state.injured3} | Mortos: {this.state.killed3}
+
+                    </div>
+
+                    <div>
+
+                        {this.state.refugee1date}
+                        <br /> Refugiados: {this.state.refugee1} <br /><br />
+                        {this.state.refugee2date}
+                        <br /> Refugiados: {this.state.refugee2} <br /><br />
+                        {this.state.refugee3date}
+                        <br /> Refugiados: {this.state.refugee3} <br /><br />
+                    </div>
+                </Carousel>
             </div>
+
+
         );
     };
 }
