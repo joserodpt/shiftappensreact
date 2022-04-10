@@ -3,7 +3,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import TextField from '@mui/material/TextField'
 import Autocomplete from '@mui/material/Autocomplete';
 
-import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
 
