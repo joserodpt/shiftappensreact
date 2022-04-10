@@ -80,7 +80,7 @@ class Dados extends React.Component {
 
             <div className='container1'>
 
-                <br/><br/>
+                <br/>
                 <Carousel className='carousel' transitionTime={650} autoPlay={true} infiniteLoop={true} showIndicators={false} interval={5000} statusFormatter={(current) => ''}>
                     <div>
                         <br/><br/><Flag></Flag> Até agora na Ucrânia <Flag></Flag><br/><br />

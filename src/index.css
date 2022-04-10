@@ -46,8 +46,8 @@ azul {
 }
 
 .container1 {
-  height: 50%;
-  width: 50%;
+  height: 12em;
+  width: 20em;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -61,7 +61,7 @@ azul {
 
   box-sizing: border-box;
   position: absolute;
-  font-size: 26px;
+  font-size: 2em;
   font-weight: 500;
 }
 
